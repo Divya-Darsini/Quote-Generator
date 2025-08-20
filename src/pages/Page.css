@@ -1,0 +1,175 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 🎨 Animated Gradient Background */
+.animated-bg {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff7eb3, #ff758c);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background: #ff7eb3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s;
+  margin-top: 20px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ff4f8b;
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* GIF Styling */
+.gif {
+  margin-top: 20px;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+/* Modern Gradient Background */
+.home-bg {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+}
+
+/* Title Glow (Modern Neon) */
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00f2fe, 0 0 20px #4facfe, 0 0 30px #00f2fe;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 15px #00f2fe, 0 0 30px #4facfe; }
+  to { text-shadow: 0 0 25px #4facfe, 0 0 45px #00f2fe; }
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #dbe9f4;
+  font-style: italic;
+}
+
+/* Glassmorphism Card (Cool Look) */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 18px;
+  width: 340px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Inputs */
+input, select {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+input::placeholder {
+  color: #cbd5e0;
+}
+
+/* Button with neon glow */
+button {
+  padding: 12px;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 15px #00f2fe, 0 0 25px #4facfe;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Fix dropdown colors */
+select {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Dropdown list (when opened) */
+select option {
+  background: #1a1a2e;   /* dark background */
+  color: white;          /* white text */
+  padding: 10px;
+}
